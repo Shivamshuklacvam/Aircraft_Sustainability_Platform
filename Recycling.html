@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Recycling Facilities - Aircraft Sustainability Platform</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" type="text/css" href="Recycling.css">
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <h1>Aircraft Sustainability Platform</h1>
+  </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="database.html">Database</a></li>
+        <li><a href="buy_identify.html">Buy/Identify</a></li>
+        <li class="active"><a href="Recycling.html" class="current">Recycling Facilities</a></li>
+      </ul>
+    </nav>
+  
+  <!-- Main content section -->
+  <main>
+    <div class="container">
+      <h2>Recycling Facilities</h2>
+      <p>Use the search form below to find recycling facilities that can process the end-of-life components from your aircraft:</p>
+      <form>
+        <label for="material">Material Type:</label>
+        <select id="material" name="material">
+          <option value="metals">Metals</option>
+          <option value="composites">Composites</option>
+          <option value="plastics">Plastics</option>
+        </select>
+        
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter a location">
+        
+        <button class="button" type="submit">Search</button>
+      </form>
+      
+      <div class="table-container">
+        <h3>Search Results</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Location</th>
+              <th>Material Types</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Recycling Center A</td>
+              <td>New York, NY</td>
+              <td>Metals, Plastics</td>
+              <td>recyclingcentera@example.com</td>
+            </tr>
+            <tr>
+              <td>Recycling Center B</td>
+              <td>Los Angeles, CA</td>
+              <td>Metals, Composites</td>
+              <td>recyclingcenterb@example.com</td>
+            </tr>
+            <tr>
+              <td>Recycling Center C</td>
+              <td>Miami, FL</td>
+              <td>Composites, Plastics</td>
+              <td>recyclingcenterc@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2023 Aircraft Sustainability Platform</p>
+  </footer>
+</body>
+</html>

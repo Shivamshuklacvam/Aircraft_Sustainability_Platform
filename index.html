@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aircraft Sustainability Platform</title>
+    <link rel="stylesheet" href="Style.css">
+</head> 
+<body>
+    <header>
+        <h1>Aircraft Sustainability Platform</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/second/html/about.html">About</a></li>
+            <li><a href="/second/html/database.html">Database</a></li>
+            <li><a href="/second/html/buy_identify.html">Buy/Identify</a></li>
+            <li><a href="/second/html/Recycling.html">Recycling Facilities</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>Welcome to the Aircraft Sustainability Platform</h2>
+        <p>Our platform connects aircraft manufacturers, airlines, and recycling facilities to facilitate the repurposing and recycling of end-of-life aircraft components. Join us in promoting sustainability in the aviation industry!</p>
+        <img src="aircraft-sustainability.jpg" alt="Aircraft Sustainability Platform">
+    </main>
+    
+    <section>
+        <h2>Buy/Identify Components</h2>
+        <form>
+            <label for="component">Component:</label>
+            <input type="text" id="component" name="component">
+            
+            <label for="material">Material:</label>
+            <input type="text" id="material" name="material">
+            
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age">
+            
+            <label for="condition">Condition:</label>
+            <select id="condition" name="condition">
+                <option value="new">New</option>
+                <option value="used">Used</option>
+                <option value="refurbished">Refurbished</option>
+            </select>
+            
+            <button type="submit">Search</button>
+        </form>
+        
+        <div class="results">
+            <h3>Search Results</h3>
+            <ul>
+                <li>Component 1 - Material A - Age 5 - Condition Used</li>
+                <li>Component 2 - Material B - Age 10 - Condition Refurbished</li>
+                <li>Component 3 - Material A - Age 7 - Condition Used</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Identify Recycled Materials</h2>
+        <form>
+            <label for="material">Material:</label>
+            <input type="text" id="material" name="material">
+            
+            <label for="type">Type:</label>
+            <select id="type" name="type">
+                <option value="metal">Metal</option>
+                <option value="composite">Composite</option>
+                <option value="plastic">Plastic</option>
+            </select>
+            
+            <button type="submit">Search</button>
+        </form>
+        
+        <div class="results">
+            <h3>Search Results</h3>
+            <ul>
+                <li>Component 1 - Material A - Type Metal</li>
+                <li>Component 2 - Material B - Type Composite</li>
+                <li>Component 3 - Material C - Type Plastic</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Buy/Identify End-of-Life Components</h2>
+        <form>
+            <label for="component">Component:</label>
+            <input type="text" id="component" name="component">
+            
+            <label for="manufacturer">Manufacturer:</label>
+            <input type="text" id="manufacturer" name="manufacturer">
+            
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age">
+            
+            <label for="condition">Condition:</label>
+            <select id="condition" name="condition">
+                <option value="new">New</option>
+                <option value="used">Used</option>
+            </select>
+            
+            <button type="submit">Search</button>
+        </form>
+        
+        <div class="results">
+            <h3>Search Results</h3>
+            <ul>
+                <li>Component 1 - Manufacturer A - Age 5 - Condition Used</li>
+                <li>Component 2 - Manufacturer B - Age 10 - Condition New</li>
+                <li>Component 3 - Manufacturer C - Age 15 - Condition Used</li>
+            </ul>
+        </div>
+        
+        <button class="buy-button" disabled>Buy</button>
+    </section>
+    
+
+    <section>
+        <h2>Circular Economy Dashboard</h2>
+        
+        <div class="metrics">
+            <div class="metric">
+                <h3>Total Components Recycled</h3>
+                <p class="number">15,000</p>
+            </div>
+            <div class="metric">
+                <h3>Recycling Rate</h3>
+                <p class="number">85%</p>
+            </div>
+            <div class="metric">
+                <h3>Revenue Generated</h3>
+                <p class="number">$1.2M</p>
+            </div>
+            <div class="metric">
+                <h3>Carbon Footprint Saved</h3>
+                <p class="number">25,000 tonnes</p>
+            </div>
+        </div>
+        
+        <div class="charts">
+            <div class="chart">
+                <h3>Components Recycled by Material Type</h3>
+                <canvas id="material-chart"></canvas>
+            </div>
+            <div class="chart">
+                <h3>Components Recycled by Age</h3>
+                <canvas id="age-chart"></canvas>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Buy/Identify Components</h2>
+        
+        <form class="search-form">
+            <input type="text" name="component-name" placeholder="Component Name">
+            <input type="text" name="component-material" placeholder="Component Material">
+            <input type="text" name="component-age" placeholder="Component Age">
+            <input type="submit" value="Search">
+        </form>
+        
+        <div class="results">
+            <div class="component">
+                <h3>Component Name</h3>
+                <p class="material">Material: <span>Aluminum</span></p>
+                <p class="age">Age: <span>10 years</span></p>
+                <button class="buy-button">Buy/Recycle Component</button>
+            </div>
+            <div class="component">
+                <h3>Component Name</h3>
+                <p class="material">Material: <span>Composite</span></p>
+                <p class="age">Age: <span>5 years</span></p>
+                <button class="buy-button">Buy/Recycle Component</button>
+            </div>
+        </div>
+    </section>
+    
+    <div id="metrics-container">
+        <div class="metric">
+              <h2>Recycling Rate</h2>
+              <p>80%</p>
+            </div>
+            <div class="metric">
+              <h2>Repurposing Rate</h2>
+              <p>20%</p>
+            </div>
+            <div class="metric">
+              <h2>Total Components Recycled</h2>
+              <p>100,000</p>
+            </div>
+            <div class="metric">
+              <h2>Total Components Repurposed</h2>
+              <p>25,000</p>
+            </div>
+          </div>
+    <footer>
+        <p>&copy; 2023 Aircraft Sustainability Platform</p>
+    </footer>
+    
+</body>
+</html>
